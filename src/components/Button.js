@@ -10,13 +10,12 @@ const Button = forwardRef(({ onMouseEnter, onMouseLeave }, buttonRef3) => {
     style.backgroundColor = "white";
   }, []);
 
+  const style = buttonRef2.current.style;
   const handleMouseEnter = () => {
-    const style = buttonRef2.current.style;
     style.color = "red";
     style.backgroundColor = "white";
   };
   const handleMouseLeave = () => {
-    const style = buttonRef2.current.style;
     style.color = "initial";
     style.backgroundColor = "rgb(106, 106, 253)";
   };
